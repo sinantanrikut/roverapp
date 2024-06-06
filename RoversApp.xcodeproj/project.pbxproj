@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA8583A32C108C76003339E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8583A22C108C76003339E3 /* AppDelegate.swift */; };
+		BA8583AC2C108C78003339E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA8583AB2C108C78003339E3 /* Assets.xcassets */; };
+		BA8583AF2C108C78003339E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA8583AD2C108C78003339E3 /* LaunchScreen.storyboard */; };
+		BA8583C22C108E19003339E3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8583C02C108E19003339E3 /* MainViewController.swift */; };
+		BA8583C32C108E19003339E3 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA8583C12C108E19003339E3 /* MainViewController.xib */; };
+		BA8583C52C109169003339E3 /* RoverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8583C42C109169003339E3 /* RoverModel.swift */; };
+		BA8583C72C10918C003339E3 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8583C62C10918C003339E3 /* NetworkConstants.swift */; };
+		BA8583C92C10919D003339E3 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8583C82C10919D003339E3 /* APICaller.swift */; };
+		BA8583CB2C1091E0003339E3 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8583CA2C1091E0003339E3 /* MainViewModel.swift */; };
+		BA8583CF2C10921C003339E3 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8583CE2C10921C003339E3 /* Observable.swift */; };
+		BA8583D12C109388003339E3 /* MainViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8583D02C109387003339E3 /* MainViewController+TableView.swift */; };
+		BA8583D52C112383003339E3 /* RoverCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8583D32C112383003339E3 /* RoverCellTableViewCell.swift */; };
+		BA8583D62C112383003339E3 /* RoverCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA8583D42C112383003339E3 /* RoverCellTableViewCell.xib */; };
+		BA8583D82C1127B7003339E3 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8583D72C1127B7003339E3 /* UIViewExtensions.swift */; };
+		BA8583DA2C112881003339E3 /* RoverTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8583D92C112881003339E3 /* RoverTableCellViewModel.swift */; };
+		BA8583DC2C11320C003339E3 /* RoverDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8583DB2C11320C003339E3 /* RoverDetailModel.swift */; };
+		BA8583DF2C1134A6003339E3 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = BA8583DE2C1134A6003339E3 /* SDWebImage */; };
+		BA8583E12C1134A6003339E3 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BA8583E02C1134A6003339E3 /* SDWebImageMapKit */; };
+		BA8583E62C11ABAE003339E3 /* DetailRoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8583E42C11ABAE003339E3 /* DetailRoverViewController.swift */; };
+		BA8583E72C11ABAE003339E3 /* DetailRoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA8583E52C11ABAE003339E3 /* DetailRoverViewController.xib */; };
+		BA8583F22C11B034003339E3 /* DetailRoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8583F12C11B034003339E3 /* DetailRoverViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BA85839F2C108C76003339E3 /* RoversApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoversApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA8583A22C108C76003339E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA8583AB2C108C78003339E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA8583AE2C108C78003339E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA8583B02C108C78003339E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA8583C02C108E19003339E3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BA8583C12C108E19003339E3 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		BA8583C42C109169003339E3 /* RoverModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverModel.swift; sourceTree = "<group>"; };
+		BA8583C62C10918C003339E3 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		BA8583C82C10919D003339E3 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		BA8583CA2C1091E0003339E3 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		BA8583CE2C10921C003339E3 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		BA8583D02C109387003339E3 /* MainViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+TableView.swift"; sourceTree = "<group>"; };
+		BA8583D32C112383003339E3 /* RoverCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverCellTableViewCell.swift; sourceTree = "<group>"; };
+		BA8583D42C112383003339E3 /* RoverCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoverCellTableViewCell.xib; sourceTree = "<group>"; };
+		BA8583D72C1127B7003339E3 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		BA8583D92C112881003339E3 /* RoverTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverTableCellViewModel.swift; sourceTree = "<group>"; };
+		BA8583DB2C11320C003339E3 /* RoverDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverDetailModel.swift; sourceTree = "<group>"; };
+		BA8583E42C11ABAE003339E3 /* DetailRoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRoverViewController.swift; sourceTree = "<group>"; };
+		BA8583E52C11ABAE003339E3 /* DetailRoverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailRoverViewController.xib; sourceTree = "<group>"; };
+		BA8583F12C11B034003339E3 /* DetailRoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRoverViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA85839C2C108C76003339E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA8583E12C1134A6003339E3 /* SDWebImageMapKit in Frameworks */,
+				BA8583DF2C1134A6003339E3 /* SDWebImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA8583962C108C76003339E3 = {
+			isa = PBXGroup;
+			children = (
+				BA8583A12C108C76003339E3 /* RoversApp */,
+				BA8583A02C108C76003339E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA8583A02C108C76003339E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA85839F2C108C76003339E3 /* RoversApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA8583A12C108C76003339E3 /* RoversApp */ = {
+			isa = PBXGroup;
+			children = (
+				BA8583E22C11AB5E003339E3 /* Controllers */,
+				BA8583BF2C108DBF003339E3 /* App */,
+				BA8583B72C108D4B003339E3 /* View */,
+				BA8583B82C108D55003339E3 /* ViewModel */,
+				BA8583B62C108D46003339E3 /* Model */,
+				BA8583BC2C108DAD003339E3 /* Networking */,
+				BA8583BD2C108DB1003339E3 /* Resources */,
+				BA8583BA2C108D98003339E3 /* Extensions */,
+				BA8583B92C108D95003339E3 /* Classes */,
+				BA8583B02C108C78003339E3 /* Info.plist */,
+			);
+			path = RoversApp;
+			sourceTree = "<group>";
+		};
+		BA8583B62C108D46003339E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA8583C42C109169003339E3 /* RoverModel.swift */,
+				BA8583DB2C11320C003339E3 /* RoverDetailModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA8583B72C108D4B003339E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA8583D22C11234E003339E3 /* Home */,
+				BA8583AD2C108C78003339E3 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA8583B82C108D55003339E3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BA8583CA2C1091E0003339E3 /* MainViewModel.swift */,
+				BA8583D92C112881003339E3 /* RoverTableCellViewModel.swift */,
+				BA8583F12C11B034003339E3 /* DetailRoverViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BA8583B92C108D95003339E3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BA8583CE2C10921C003339E3 /* Observable.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BA8583BA2C108D98003339E3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BA8583D72C1127B7003339E3 /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BA8583BB2C108DA0003339E3 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BA8583C02C108E19003339E3 /* MainViewController.swift */,
+				BA8583C12C108E19003339E3 /* MainViewController.xib */,
+				BA8583D02C109387003339E3 /* MainViewController+TableView.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		BA8583BC2C108DAD003339E3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BA8583C62C10918C003339E3 /* NetworkConstants.swift */,
+				BA8583C82C10919D003339E3 /* APICaller.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		BA8583BD2C108DB1003339E3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BA8583AB2C108C78003339E3 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BA8583BF2C108DBF003339E3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BA8583A22C108C76003339E3 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BA8583D22C11234E003339E3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BA8583D32C112383003339E3 /* RoverCellTableViewCell.swift */,
+				BA8583D42C112383003339E3 /* RoverCellTableViewCell.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BA8583E22C11AB5E003339E3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BA8583E32C11AB6F003339E3 /* DetailRoverViewController */,
+				BA8583BB2C108DA0003339E3 /* MainViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BA8583E32C11AB6F003339E3 /* DetailRoverViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BA8583E42C11ABAE003339E3 /* DetailRoverViewController.swift */,
+				BA8583E52C11ABAE003339E3 /* DetailRoverViewController.xib */,
+			);
+			path = DetailRoverViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA85839E2C108C76003339E3 /* RoversApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA8583B32C108C78003339E3 /* Build configuration list for PBXNativeTarget "RoversApp" */;
+			buildPhases = (
+				BA85839B2C108C76003339E3 /* Sources */,
+				BA85839C2C108C76003339E3 /* Frameworks */,
+				BA85839D2C108C76003339E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoversApp;
+			packageProductDependencies = (
+				BA8583DE2C1134A6003339E3 /* SDWebImage */,
+				BA8583E02C1134A6003339E3 /* SDWebImageMapKit */,
+			);
+			productName = RoversApp;
+			productReference = BA85839F2C108C76003339E3 /* RoversApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA8583972C108C76003339E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					BA85839E2C108C76003339E3 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = BA85839A2C108C76003339E3 /* Build configuration list for PBXProject "RoversApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA8583962C108C76003339E3;
+			packageReferences = (
+				BA8583DD2C1134A6003339E3 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
+			productRefGroup = BA8583A02C108C76003339E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA85839E2C108C76003339E3 /* RoversApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA85839D2C108C76003339E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA8583D62C112383003339E3 /* RoverCellTableViewCell.xib in Resources */,
+				BA8583AF2C108C78003339E3 /* LaunchScreen.storyboard in Resources */,
+				BA8583C32C108E19003339E3 /* MainViewController.xib in Resources */,
+				BA8583E72C11ABAE003339E3 /* DetailRoverViewController.xib in Resources */,
+				BA8583AC2C108C78003339E3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA85839B2C108C76003339E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA8583C72C10918C003339E3 /* NetworkConstants.swift in Sources */,
+				BA8583C52C109169003339E3 /* RoverModel.swift in Sources */,
+				BA8583A32C108C76003339E3 /* AppDelegate.swift in Sources */,
+				BA8583E62C11ABAE003339E3 /* DetailRoverViewController.swift in Sources */,
+				BA8583DC2C11320C003339E3 /* RoverDetailModel.swift in Sources */,
+				BA8583D12C109388003339E3 /* MainViewController+TableView.swift in Sources */,
+				BA8583F22C11B034003339E3 /* DetailRoverViewModel.swift in Sources */,
+				BA8583CF2C10921C003339E3 /* Observable.swift in Sources */,
+				BA8583D52C112383003339E3 /* RoverCellTableViewCell.swift in Sources */,
+				BA8583D82C1127B7003339E3 /* UIViewExtensions.swift in Sources */,
+				BA8583C92C10919D003339E3 /* APICaller.swift in Sources */,
+				BA8583C22C108E19003339E3 /* MainViewController.swift in Sources */,
+				BA8583DA2C112881003339E3 /* RoverTableCellViewModel.swift in Sources */,
+				BA8583CB2C1091E0003339E3 /* MainViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BA8583AD2C108C78003339E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA8583AE2C108C78003339E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA8583B12C108C78003339E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA8583B22C108C78003339E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA8583B42C108C78003339E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UDN38C656M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RoversApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sinantanrikut.RoversApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA8583B52C108C78003339E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UDN38C656M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RoversApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sinantanrikut.RoversApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA85839A2C108C76003339E3 /* Build configuration list for PBXProject "RoversApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA8583B12C108C78003339E3 /* Debug */,
+				BA8583B22C108C78003339E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA8583B32C108C78003339E3 /* Build configuration list for PBXNativeTarget "RoversApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA8583B42C108C78003339E3 /* Debug */,
+				BA8583B52C108C78003339E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BA8583DD2C1134A6003339E3 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.19.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BA8583DE2C1134A6003339E3 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA8583DD2C1134A6003339E3 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		BA8583E02C1134A6003339E3 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA8583DD2C1134A6003339E3 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BA8583972C108C76003339E3 /* Project object */;
+}
